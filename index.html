@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fr">
+<!--<![endif]-->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <!-- Google Fonts (Fira sans) -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,600" rel="stylesheet">
+  <!-- Google Fonts (Open sans) -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- Personal stylesheet-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/p.png" type="image/png">
+
+  <title>Portfolio Adel Mkhenini</title>
+  <meta id="Reverso_extension___elForCheckedInstallExtension" name="Reverso extension" content="2.2.182">
+</head>
+
+<body class="bg">
+  <header id="headerBanner" class="mb-5 headerScroll">
+    <div class="container d-flex row mx-auto p-4">
+      <!--Profile img-->
+
+      <img class="img-fluid align-self-center" src="img/adel.png" alt="Adel Mkhenini">
+      <div style="width: 20px;"></div>
+      <div class="profile align-self-center">
+        <!-- Profile content -->
+        <h1 class="name m-0 title text-light">Adel Mkhenini</h1>
+        <h2 class="occupation m-0">Développeur web junior</h2>
+        <ul class="social pt-3">
+          <li><a href="https://github.com/Adel-MKH" target="_blank"><i class="color_yellow fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/adel-mkhenini/" target="_blank"><i class="color_yellow fab fa-linkedin-in"></i></a></li>
+
+        </ul>
+      </div>
+      <div class="align-self-center ml-auto pr-0">
+        <!-- Download resume btn -->
+        <a class="resume btn btn-outline btn-lg" href="files/AdelMkheniniCV.pdf" target="_blank" download=""><i class="fas fa-file mr-2"></i> TÉLÉCHARGER MON CV</a>
+        <!--Contact btn -->
+        <a class="contact bg_yellow btn btn-lg" data-toggle="modal" data-target="#modalContactForm" href=""><i class="fas fa-paper-plane mr-2"></i> ME CONTACTER</a>
+      </div>
+      <!-- //container -->
+    </div>
+
+  </header>
+
+  <!-- CONTACT FORM MODAL -->
+  <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold" id="myModalLabel">Me contacter</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+
+          <form action="contact.php" method="post">
+            <div>
+              <label for="name">Nom :</label>
+              <input required type="text" id="name" class="form-control mb-2" name="name">
+            </div>
+            <div>
+              <label for="mail">e-mail :</label>
+              <input required type="email" id="mail" class="form-control mb-2" name="email">
+            </div>
+            <div>
+              <label for="msg">Message :</label>
+              <textarea required id="msg" class="form-textarea form-control mb-3" name="message" rows="10" cols="50"></textarea>
+            </div>
+
+            <div class="button modal-footer d-flex justify-content-center">
+              <button class="send bg_yellow btn btn-unique" type="submit">Envoyer le message</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <main class="container">
+    <div class="row">
+
+      <!-- Right Section -->
+      <div class="col-lg-4 col-sm-12 col-md-12 mr-auto">
+        <!-- SKILLS PART -->
+        <aside>
+          <h3 class="title title-dark">Compétences</h3>
+          <!-- Front end -->
+          <div class="skills-front shadow jumbotron bg_blue">
+            <h4 class="subtitle">Front-end</h4>
+            <ul>
+              <li><i class="fab fa-html5 mr-2"></i>HTML</li>
+              <li><i class="fab fa-css3-alt mr-2"></i>CSS</li>
+              <li><i class="fab fa-js mr-2"></i>JavaScript</li>
+              <li><i class="devicon-bootstrap-plain mr-2"></i>Bootstrap</li>
+            </ul>
+          </div>
+          <!-- Back-end -->
+          <div class="skills-back shadow jumbotron bg_blue">
+            <h4 class="subtitle">Back-end</h4>
+            <ul>
+              <li><i class="fas fa-database mr-2"></i>MySQL</li>
+              <li><i class="fab fa-linux mr-2"></i>Systèmes UNIX</li>
+            </ul>
+          </div>
+          <!-- Autres -->
+          <div class="skills-theory shadow jumbotron bg_blue">
+            <h4 class="subtitle"><i class="mr-2 fas fa-graduation-cap"></i>Autres</h4>
+            <ul>
+              <li><i class="fas fa-book mr-2"></i>Algorithmique</li>
+              <li><i class="fab fa-git mr-2"></i>git</li>
+
+            </ul>
+          </div>
+
+          <!-- Langues -->
+          <div class="languages shadow jumbotron bg_blue">
+            <h4 class="subtitle"><i class="mr-2 far fa-comments"></i>Langues</h4>
+            <ul>
+              <li>Anglais (B1)</li>
+              <li>Français</li>
+            </ul>
+          </div>
+          <!-- Education -->
+          <div class="education shadow jumbotron">
+            <h4 class="subtitle"><i class="mr-2 fas fa-user-graduate"></i>Formation/Diplômes</h4>
+            <ul>
+              <li class="mb-2"><strong>-En cours</strong> - Diplôme de «Développeur web» formation <a href="https://passerelle-numerique.fr/" target="_blank">Passerelle Numérique</a> (ex-SIMPLonMARS) - École Centrale de Marseille (8 mois, 850h)
+              </li>
+              <li> </li>
+              <li><strong>-2011</strong> - Titre Professionnel de conducteur routier de marchandises sur tous véhicules</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Left Section -->
+      <div class="col-lg-8 col-sm-12 col-md-12">
+        <section class="about row">
+          <div class="">
+            <div class="about jumbotron shadow">
+              <h3 class="title">À propos</h3>
+              <p>Actuellement en reconversion professionnelle, au sein de la formation <a href="https://passerelle-numerique.fr/" target="_blank">Passerelle Numérique</a> de l'école centrale de Marseille, avec pour objectif d'optenir mon diplôme d'établissement de développeur web junior Full-Stack.</p>
+              <p>Pour plus de renseignements, n'hésitez pas à me contacter.</p>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio">
+          <!-- Page Heading -->
+          <h2 class="my-4 title title-dark">Portfolio
+            <small>Mes derniers projets</small>
+          </h2>
+
+          <!-- Project Five -->
+          <div class="row portfolio-item">
+            <div class="col-md-7">
+              <a href="https://adel-mkh.github.io/Festival_Neant/">
+                <img class="img-fluid shadow rounded mb-3 mb-md-0" src="img/Festival_Neant.png" alt="Festival Néant">
+              </a>
+            </div>
+            <div class="col-md-5">
+              <h3 class="title title-dark">Festival Néant</h3>
+              <p>Projet d'un site brutalist qui a pour thème un festival sur l'art numérique</p>
+              <a class="btn bg_yellow btn-viewmore  disabled" href="https://adel-mkh.github.io/Festival_Neant/">EN COURS</a>
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <br>
+
+          <!-- Project Four -->
+          <div class="row portfolio-item">
+            <div class="col-md-7">
+              <a href="https://adel-mkh.github.io/JSGAME/">
+                <img class="img-fluid shadow rounded mb-3 mb-md-0" src="img/JS_Game.png" alt="JS Game">
+              </a>
+            </div>
+            <div class="col-md-5">
+              <h3 class="title title-dark">JS Game</h3>
+              <p>Un jeu web de rapidité, uniquement en HTML/CSS/JS résumant les connaissances acquises en JavaScript au moment de sa réalisation.</p>
+              <a class="btn bg_yellow btn-viewmore" href="https://adel-mkh.github.io/JSGAME/">VOIR PLUS</a>
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <br>
+
+          <!-- Project Three -->
+          <div class="row portfolio-item">
+            <div class="col-md-7">
+              <a href="https://adel-mkh.github.io/Tea-World/">
+                <img class="img-fluid shadow rounded mb-3 mb-md-0" src="img/Tea_World.png" alt="Tea World">
+              </a>
+            </div>
+            <div class="col-md-5">
+              <h3 class="title title-dark">Tea World</h3>
+              <p>Création d’un site web d'E-commerce fictif et statique pour de la vente de thé bio éco-responsable.</p>
+              <a class="btn bg_yellow btn-viewmore" href="https://adel-mkh.github.io/Tea-World/">VOIR PLUS</a>
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <br>
+
+
+          <!-- Project Two -->
+          <div class="row portfolio-item">
+            <div class="col-md-7">
+              <a href="https://adel-mkh.github.io/Mondrian/">
+                <img class="img-fluid shadow rounded mb-3 mb-md-0" src="img/Mondrian.png" alt="Mondrian">
+              </a>
+            </div>
+            <div class="col-md-5">
+              <h3 class="title title-dark">Mondrian</h3>
+              <p>Reproduction d'une peinture de Piet Mondrian, en Flexbox.</p>
+              <a class="btn bg_yellow btn-viewmore" href="https://adel-mkh.github.io/Mondrian/">VOIR PLUS</a>
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <br>
+
+          <!-- Project One -->
+          <div class="row portfolio-item">
+            <div class="col-md-7">
+              <a href="https://adel-mkh.github.io/VR_History/">
+                <img class="img-fluid shadow rounded mb-3 mb-md-0" src="img/VR_History.png" alt="VR History">
+              </a>
+            </div>
+            <div class="col-md-5">
+              <h3 class="title title-dark">VR History</h3>
+              <p>Réalisation en équipe  d’un site web fictif et statique pour une application mobile.</p>
+              <p>En collaboration avec Idala BOUYERDEN, Renaud CINI-HARRIS, Antoine DUFAYET et Julien TREMBLAY.</p>
+              <a class="btn bg_yellow btn-viewmore" href="https://adel-mkh.github.io/VR_History/">VOIR PLUS</a>
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <br>
+
+
+        </section>
+      </div>
+    </div>
+
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+
+</html>
